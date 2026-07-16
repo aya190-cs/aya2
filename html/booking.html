@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>احجز الآن</title>
+  <link rel="stylesheet" href="../css/stylee.css">
+  <link rel="stylesheet" href="../vendor/lib/fontawsome.css">
+  <script src="../vendor/lib/fontawsome.js"></script>
+</head>
+<body>
+
+  <nav class="styc">
+    
+    <div class="logo"><i class="fas fa-mug-hot"></i> أروما</div>
+  
+    <div class="burger" id="burger">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <ul id="nav-links">
+      <li><a href="../index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+      <li><a href="about.html"><i class="fas fa-users"></i> من نحن</a></li>
+      <li><a href="menu.html"><i class="fas fa-utensils"></i> القائمة</a></li>
+      <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> الموقع</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+      <li><a href="login.html"class="active"><i class="fas fa-calendar-check"></i> احجز الآن</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact_main">
+    <div class="booking-container">
+      <h3 id="welcomeText" style="text-align: center; color: #333; margin-bottom: 20px;"></h3>
+
+      <h2 class="booking-title">احجز طاولتك الآن</h2>
+
+      <form id="bookingForm" class="booking-form" novalidate>
+        <div class="booking-group">
+          <label for="name"><i class="fas fa-user"></i> الاسم الكامل</label>
+          <input type="text" id="name" placeholder="أدخل اسمك الكامل">
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="booking-group">
+          <label for="phone"><i class="fas fa-phone"></i> رقم الجوال</label>
+          <input type="tel" id="phone" placeholder="7xxxxxxxx">
+          <small class="error" id="phoneError"></small>
+        </div>
+
+        <div class="booking-group">
+          <label for="date"><i class="fas fa-calendar-alt"></i> التاريخ</label>
+          <input type="date" id="date">
+          <small class="error" id="dateError"></small>
+        </div>
+
+        <div class="booking-group">
+          <label for="time"><i class="fas fa-clock"></i> الوقت</label>
+          <input type="time" id="time">
+          <small class="error" id="timeError"></small>
+        </div>
+
+        <div class="booking-group full-width">
+          <label for="people"><i class="fas fa-users"></i> عدد الأشخاص</label>
+          <select id="people">
+            <option value="">اختر عدد الأشخاص</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 أو أكثر</option>
+          </select>
+          <small class="error" id="peopleError"></small>
+        </div>
+
+        <div class="booking-group full-width">
+          <label for="notes"><i class="fas fa-comment-dots"></i> ملاحظات (اختياري)</label>
+          <textarea id="notes" placeholder="أي طلبات خاصة؟"></textarea>
+        </div>
+
+        <button type="submit"><i class="fas fa-paper-plane"></i> تأكيد الحجز</button>
+      </form>
+
+      <div class="success-message" id="successMessage">
+        تم الحجز بنجاح! شكرًا لك، سنقوم بالتواصل معك لتأكيد الحجز.
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer_top">
+      <div class="container footer-content">
+    
+        <div class="footer-section">
+          <h3>عن المقهى</h3>
+          <p>
+            مقهى أروما<br> حيث تلتقي الأجواء الساحرة مع أفضل أنواع القهوة.
+    <br>        نرحب بك في أي وقت لتجربة لا تُنسى.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+        <li><a href="about.html"class="active"><i class="fas fa-users"></i> من نحن</a></li>
+        <li><a href="menu.html"><i class="fas fa-utensils"></i> القائمة</a></li>
+        <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> الموقع</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+        <li><a href="login.html"><i class="fas fa-calendar-check"></i> احجز الآن</a></li>
+      </ul>
+        </div>
+        <div class="footer-section">
+          <h3>تابعنا</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      
+    
+    
+    </div>
+    
+      <div class="footer-bottom">
+        <p>© 2025 كاريزما كافيه. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
